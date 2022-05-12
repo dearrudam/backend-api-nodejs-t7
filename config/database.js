@@ -3,7 +3,7 @@ const args = require("args-parser")(process.argv)
 mongoose.Promise = require("bluebird")
 
 if (args.production)
-    module.exports = mongoose.connect('mongodb://nome_banco:senha@servidor.com.br:27017/usuario' ) // Umbler
+    module.exports = mongoose.connect('mongodb://nome_banco:senha@servidor.com.br:27017/usuario' )
 else
     module.exports = mongoose.connect('mongodb://localhost/banco_dados')    
 
