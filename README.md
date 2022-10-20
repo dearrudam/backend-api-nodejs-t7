@@ -1,14 +1,30 @@
-Projeto de desenvolvimento de API - T7
+# Introduction 
+TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project..
 
-Pré requisito:
-* NodeJS
-* MongoDB
-* Express
+# Getting Started
+TODO: Para a aplicação funcionar é necessário configurar:
+- Servidor HTTP (Express)
+- Rotas para a API REST (Express/Node Restful)
+- Conexão com Banco de Dados (Mongoose/MongoDB).
 
-Instalando as depenedencias do projeto:
-* Fazer o clone do projeto
-* Executar o comando <npm install>, para instalar as dependencias do projeto. OBS: Dependencias declaradas no arquivo "Package.json". 
+# Api
+API REST foi implementada utilizando um módulo node chamado [node-restful](https://github.com/baugarten/node-restful).
+# Build and Test
+TODO: Para testes TDD, utilizaremos mocha chai. Para executar os tests unitário digite:
+```sh
+$ npm test 
+``` 
+## Configuração
 
-Para executar o projeto:
-* <npm run dev> para executar o projeto apontando para o banco dedados local.
-* <npm start> para exercutar o projeto apontando para o banco de dados de produção.
+1. Instalar os módulos do node utilizando o **npm**.
+```sh
+```
+
+2. Inicializar a aplicação em **modo desenvolvimento**.
+```sh
+$ npm run dev
+```
+
+3. Inicializar a aplicação em **modo produção**.
+```sh
+$ npm run start
