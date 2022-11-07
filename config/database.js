@@ -5,7 +5,7 @@ mongoose.Promise = require("bluebird")
 if (args.production)
     module.exports = mongoose.connect('mongodb://nome_banco:senha@servidor.com.br:27017/usuario' )
 else
-    module.exports = mongoose.connect('mongodb://localhost/banco_dados')    
+    module.exports = mongoose.connect('mongodb://root:example@localhost:27017/')    
 
 mongoose.Error.messages.general.required = "O campo '{PATH}' é obrigatório."
 mongoose.Error.messages.Number.min = "O '{PATH}' informado é menor que o limite mínimo de '{MIN}'."
