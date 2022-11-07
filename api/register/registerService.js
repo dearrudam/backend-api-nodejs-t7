@@ -4,8 +4,10 @@ const Register = require('./register')
 Register.methods(['get', 'post', 'put', 'delete'])
 Register.updateOptions({ new: true, runValidators: true })
 
-Register.after('post', sendErrorsOrNext).after('put', sendErrorsOrNext)
-Register.before('post', register).before('put', register)
+Register.before('post', register)
+        //.before('put', register)
+        .after('post', sendErrorsOrNext)
+        .after('put', sendErrorsOrNext)
 
 function sendErrorsOrNext(req, res, next) {
   const bundle = res.locals.bundle
